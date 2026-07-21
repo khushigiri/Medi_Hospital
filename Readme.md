@@ -8,14 +8,17 @@ Hero section
 •	Tagline 
 •	Emergency Number 
 •	Book Inquiry button 
-Sections
+•   Language
+•   Sections
+•   Statistics
 •	About Medi Hospital 
 •	Why Choose Us 
 •	Our Departments (cards) 
 •	Doctors Preview 
 •	Facilities 
 •	Testimonials 
-•	Inquiry CTA 
+•   FAQs
+•	Inquiry CTA / request a call back
 ________________________________________
 2. About Us
 •	Hospital History 

@@ -1,5 +1,9 @@
 function Departments() {
-  return <h1>Departments Page</h1>;
+  return (
+    <>
+      Departments Page
+    </>
+  );
 }
 
 export default Departments;
