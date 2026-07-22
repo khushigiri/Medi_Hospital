@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Departments from "./pages/Departments";
-import Facilities from "./pages/Facilities";
+import Doctors from "./pages/Doctors";
+import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -17,9 +17,9 @@ function App() {
 
         <Route path="/about" element={<About />} />
 
-        <Route path="/departments" element={<Departments />} />
+        <Route path="/doctors" element={<Doctors />} />
 
-        <Route path="/facilities" element={<Facilities />} />
+        <Route path="/services" element={<Services />} />
 
         <Route path="/gallery" element={<Gallery />} />
 

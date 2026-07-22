@@ -1,0 +1,21 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #2E8B57;
+    --primary-light: #EAF8F0;
+    --secondary-color: #E74C3C;
+
+    /* Neutral Colors */
+    --white: #FFFFFF;
+    --background: #F9FAFB;
+    --text-dark: #1F2937;
+    --text-light: #6B7280;
+    --border: #E5E7EB;
+
+    /* Effects */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --radius: 14px;
+    --transition: all 0.3s ease;
+
+    /* Layout */
+    --container-width: 1200px;
+}
