@@ -5,7 +5,7 @@ import {
     FaHospital,
     FaHeartbeat,
     FaUserMd,
-    FaProcedures,
+    FaAmbulance
 } from "react-icons/fa";
 
 import "./Hero.css";
@@ -13,7 +13,7 @@ import hospitalInfo from "../../data/hospitalInfo";
 
 function Hero() {
     return (
-        <section className="hero">
+        <section className="hero-section">
 
             {/* Background Blur */}
             <div className="hero-bg-circle hero-circle-1"></div>
@@ -73,10 +73,10 @@ function Hero() {
                     transition={{ duration: 0.9 }}
                 >
 
-                    <div className="doctor-background"></div>
+                    <div className="hero-doctor-background"></div>
 
                     <motion.img
-                        className="doctor-image"
+                        className="hero-doctor-image"
                         src="/doctors/dr-nk-modi.png"
                         alt="Dr. N. K. Modi"
                         animate={{
@@ -93,7 +93,7 @@ function Hero() {
                     {/* Floating Cards */}
 
                     <motion.div
-                        className="floating-card card-one"
+                        className="hero-floating-card hero-card-one"
                         animate={{ y: [0, -10, 0] }}
                         transition={{ repeat: Infinity, duration: 3 }}
                     >
@@ -105,7 +105,7 @@ function Hero() {
                     </motion.div>
 
                     <motion.div
-                        className="floating-card card-two"
+                        className="hero-floating-card hero-card-two"
                         animate={{ y: [0, 12, 0] }}
                         transition={{ repeat: Infinity, duration: 4 }}
                     >
@@ -117,19 +117,19 @@ function Hero() {
                     </motion.div>
 
                     <motion.div
-                        className="floating-card card-three"
+                        className="hero-floating-card hero-card-three"
                         animate={{ y: [0, -12, 0] }}
                         transition={{ repeat: Infinity, duration: 3.5 }}
                     >
-                        <FaProcedures />
+                        <FaAmbulance />
                         <div>
-                            <h4>20 Bedded</h4>
-                            <p>ICU / HDU</p>
+                            <h4>Emergency</h4>
+                            <p>24×7 Support</p>
                         </div>
                     </motion.div>
 
                     <motion.div
-                        className="floating-card card-four"
+                        className="hero-floating-card hero-card-four"
                         animate={{ y: [0, 10, 0] }}
                         transition={{ repeat: Infinity, duration: 3.8 }}
                     >

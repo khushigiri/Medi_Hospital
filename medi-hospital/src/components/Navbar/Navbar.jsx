@@ -23,7 +23,7 @@ function Navbar() {
             <div className="container navbar-container">
 
                 <Link to="/" className="logo">
-                    <img src="/logo.jpeg" alt="Medi Hospital Logo" />
+                    <img src="/logo.png" alt="Medi Hospital Logo" />
                     <div>
                         <h2>{hospitalInfo.name}</h2>
                         <span><b>AAPKE SVAASTH KA PAHALA KADAM</b></span>
