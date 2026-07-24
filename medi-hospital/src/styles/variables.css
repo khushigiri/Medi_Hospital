@@ -1,21 +1,84 @@
 :root {
-    /* Primary Colors */
-    --primary-color: #2E8B57;
-    --primary-light: #EAF8F0;
-    --secondary-color: #E74C3C;
+    /* ==========================
+       PRIMARY BRAND COLORS
+    ========================== */
+    --primary-color: #0077A6;
+    /* Apollo Blue */
+    --primary-dark: #005E85;
+    --primary-light: #EAF7FB;
+    --primary-hover: #006A95;
 
-    /* Neutral Colors */
+    /* ==========================
+       ACCENT COLORS
+    ========================== */
+    --secondary-color: #FDB931;
+    /* Apollo Gold */
+    --secondary-dark: #E6A622;
+    --secondary-light: #FFF7E6;
+
+    /* ==========================
+       STATUS COLORS
+    ========================== */
+    --success: #16A34A;
+    --warning: #F59E0B;
+    --danger: #DC2626;
+    --info: #0EA5E9;
+
+    /* ==========================
+       BACKGROUNDS
+    ========================== */
     --white: #FFFFFF;
-    --background: #F9FAFB;
+    --background: #F8FAFC;
+    --background-alt: #F1F5F9;
+    --section-bg: #F9FCFE;
+    --card-bg: #FFFFFF;
+
+    /* ==========================
+       TEXT
+    ========================== */
     --text-dark: #1F2937;
+    --text-medium: #4B5563;
     --text-light: #6B7280;
+    --text-white: #FFFFFF;
+
+    /* ==========================
+       BORDERS
+    ========================== */
     --border: #E5E7EB;
+    --border-light: #F1F5F9;
+    --border-dark: #CBD5E1;
 
-    /* Effects */
+    /* ==========================
+       SHADOWS
+    ========================== */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    --radius: 14px;
-    --transition: all 0.3s ease;
+    --shadow-lg: 0 18px 45px rgba(0, 0, 0, 0.12);
 
-    /* Layout */
+    /* ==========================
+       GRADIENTS
+    ========================== */
+    --gradient-primary: linear-gradient(135deg, #0077A6 0%, #0097D1 100%);
+    --gradient-secondary: linear-gradient(135deg, #FDB931 0%, #F7A600 100%);
+    --gradient-light: linear-gradient(135deg, #F8FAFC 0%, #EAF7FB 100%);
+
+    /* ==========================
+       RADIUS
+    ========================== */
+    --radius-sm: 8px;
+    --radius: 14px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+
+    /* ==========================
+       TRANSITIONS
+    ========================== */
+    --transition-fast: all 0.2s ease;
+    --transition: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+
+    /* ==========================
+       LAYOUT
+    ========================== */
     --container-width: 1200px;
 }

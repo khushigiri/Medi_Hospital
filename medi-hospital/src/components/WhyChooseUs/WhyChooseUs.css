@@ -1,0 +1,164 @@
+.why-section {
+    padding: 120px 8%;
+    background: linear-gradient(180deg, #F8FAFC, #FFFFFF);
+}
+
+.why-header {
+    text-align: center;
+    max-width: 760px;
+    margin: auto;
+}
+
+.why-header h2 {
+    margin: 18px 0;
+    font-size: 44px;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.why-header p {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.why-grid {
+    margin-top: 70px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.why-card {
+
+    position: relative;
+
+    background: #fff;
+
+    border-radius: 24px;
+
+    padding: 40px 32px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 119, 166, .08);
+
+    box-shadow: 0 15px 35px rgba(0, 119, 166, .08);
+
+    transition: .35s;
+}
+
+.why-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: var(--gradient-primary);
+
+    transform: scaleX(0);
+
+    transition: .35s;
+}
+
+.why-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 28px 60px rgba(0, 119, 166, .15);
+}
+
+.why-card:hover::before {
+
+    transform: scaleX(1);
+}
+
+.why-icon {
+
+    width: 75px;
+    height: 75px;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 119, 166, .08);
+
+    color: var(--primary-color);
+
+    font-size: 32px;
+
+    transition: .35s;
+}
+
+.why-card:hover .why-icon {
+
+    background: var(--gradient-primary);
+
+    color: #fff;
+
+    transform: rotate(-8deg) scale(1.08);
+}
+
+.why-card h3 {
+
+    margin: 28px 0 15px;
+
+    font-size: 23px;
+
+    color: var(--text-dark);
+}
+
+.why-card p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+@media(max-width:992px) {
+
+    .why-section {
+
+        padding: 90px 6%;
+    }
+
+    .why-header h2 {
+
+        font-size: 36px;
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .why-header h2 {
+
+        font-size: 30px;
+    }
+
+    .why-grid {
+
+        gap: 20px;
+    }
+
+    .why-card {
+
+        padding: 30px 24px;
+    }
+
+}
