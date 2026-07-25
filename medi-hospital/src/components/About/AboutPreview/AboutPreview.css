@@ -1,5 +1,5 @@
 .about {
-    padding: 120px 8%;
+    padding: 100px 8%;
     background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
 }
 
@@ -32,11 +32,11 @@
     letter-spacing: 2px;
 }
 
-.about-content h2 {
-    font-size: 50px;
+.about-content h3 {
+    font-size: 40px;
     margin: 15px 0;
     color: var(--text-dark);
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
 .about-content h4 {
@@ -46,48 +46,16 @@
 
 .about-content p {
     color: var(--text-light);
-    line-height: 1.9;
+    line-height: 1.6;
     font-size: 17px;
     text-align: justify;
-}
-
-.stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin: 40px 0;
-}
-
-.stats div {
-    background: #fff;
-    padding: 25px;
-    border-radius: 18px;
-    border: 1px solid rgba(0, 119, 166, .08);
-    box-shadow: 0 15px 35px rgba(0, 119, 166, .08);
-    transition: all .35s ease;
-}
-
-.stats div:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 22px 45px rgba(0, 119, 166, .15);
-    border-color: rgba(0, 119, 166, .18);
-}
-
-.stats h3 {
-    color: var(--primary-color);
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.stats span {
-    color: var(--text-light);
 }
 
 .about-btn {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-
+    margin-top: 30px;
     background: var(--gradient-primary);
     color: #fff;
 
@@ -130,6 +98,7 @@
 
     .about-btn {
         margin: auto;
+        margin-top: 30px;
     }
 
 }

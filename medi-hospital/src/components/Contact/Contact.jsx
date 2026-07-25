@@ -145,17 +145,6 @@ function Contact() {
 
                 </div>
 
-                <div className="map-container">
-
-                    <iframe
-                        title="Medi Hospital Location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.81124884672!2d86.46117277533823!3d23.825310078619342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bb41f0966b77%3A0x245f41978b22d97f!2sMedi%20Hospital!5e0!3m2!1sen!2sin!4v1784890168568!5m2!1sen!2sin"
-                        loading="lazy"
-                        allowFullScreen
-                    ></iframe>
-
-                </div>
-
             </div>
 
         </section>

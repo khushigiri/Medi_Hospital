@@ -1,0 +1,68 @@
+.loader {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    z-index: 99999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-logo {
+    width: 110px;
+    margin-bottom: 18px;
+
+    animation: pulse 1.2s infinite;
+}
+
+.loader h2 {
+    color: #0b5ed7;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.loader-bar {
+    width: 220px;
+    height: 6px;
+    background: #ececec;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.loader-bar span {
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: #f4b400;
+    border-radius: 20px;
+
+    animation: loading 1.4s infinite;
+}
+
+@keyframes loading {
+
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(320%);
+    }
+
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+}

@@ -26,7 +26,7 @@ function Navbar() {
                     <img src="/logo.png" alt="Medi Hospital Logo" />
                     <div>
                         <h2>{hospitalInfo.name}</h2>
-                        <span><b>AAPKE SVAASTH KA PAHALA KADAM</b></span>
+                        <span><b>मेडी हॉस्पिटल</b></span>
                     </div>
                 </Link>
 

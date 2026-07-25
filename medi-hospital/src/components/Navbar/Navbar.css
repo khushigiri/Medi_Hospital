@@ -38,8 +38,8 @@
 }
 
 .logo span {
-    font-size: .78rem;
-    color: var(--text-light);
+    font-size: 1.2rem;
+    color: #F1A414
 }
 
 .nav-links {

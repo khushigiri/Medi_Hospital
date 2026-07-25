@@ -1,0 +1,60 @@
+.floating-buttons {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 95px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    z-index: 998;
+
+}
+
+.floating-buttons a {
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 22px;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
+
+    transition: .3s;
+
+}
+
+.floating-buttons a:nth-child(1) {
+
+    background: #0b5ed7;
+
+}
+
+.floating-buttons a:nth-child(2) {
+
+    background: #25D366;
+
+}
+
+.floating-buttons a:nth-child(3) {
+
+    background: #f4b400;
+
+}
+
+.floating-buttons a:hover {
+
+    transform: translateY(-5px) scale(1.08);
+
+}

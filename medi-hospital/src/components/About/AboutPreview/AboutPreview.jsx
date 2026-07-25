@@ -1,4 +1,4 @@
-import "./About.css";
+import "./AboutPreview.css";
 import aboutImg from "./about.png";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
@@ -61,14 +61,14 @@ export default function About() {
                         ABOUT MEDI HOSPITAL
                     </motion.span>
 
-                    <motion.h2 variants={item}>
-                        Your Health,
+                    <motion.h3 variants={item}>
+                        Where Quality Care
                         <br />
-                        Our First Priority
-                    </motion.h2>
+                        Meets Affordability
+                    </motion.h3>
 
                     <motion.h4 variants={item}>
-                        AAPKE SWAASTH KA PAHALA KADAM
+                        Trusted Healthcare. Transparent Costs. Compassionate Service.
                     </motion.h4>
 
                     <motion.p variants={item}>
@@ -89,33 +89,6 @@ export default function About() {
                         healthcare for every stage of life.
 
                     </motion.p>
-
-                    <motion.div
-                        variants={item}
-                        className="stats"
-                    >
-
-                        <div>
-                            <h3>40K+</h3>
-                            <span>Patients</span>
-                        </div>
-
-                        <div>
-                            <h3>3+</h3>
-                            <span>Years</span>
-                        </div>
-
-                        <div>
-                            <h3>Trusted</h3>
-                            <span>Healthcare</span>
-                        </div>
-
-                        <div>
-                            <h3>Patient</h3>
-                            <span>First</span>
-                        </div>
-
-                    </motion.div>
 
                     <motion.div variants={item}>
                         <Link to="/about" className="about-btn">
