@@ -104,7 +104,7 @@ function Doctor() {
 
                     </div>
 
-                    <a href="#contact" className="doctor-btn">
+                    <a href="\contact" className="doctor-btn">
 
                         Book Consultation
 

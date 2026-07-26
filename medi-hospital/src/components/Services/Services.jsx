@@ -7,8 +7,8 @@ import {
     FaBrain,
     FaLungs,
     FaAmbulance,
-    FaWheelchair,
     FaTint,
+    FaNotesMedical,
     FaArrowRight,
 } from "react-icons/fa";
 
@@ -16,32 +16,32 @@ const services = [
     {
         icon: <FaHeartbeat />,
         title: "Heart Clinic",
-        desc: "Comprehensive cardiac consultation and heart care.",
+        desc: "Comprehensive cardiac consultation and personalized heart care.",
     },
     {
         icon: <FaBrain />,
         title: "Neuro Clinic",
-        desc: "Diagnosis and treatment for neurological conditions.",
+        desc: "Expert diagnosis and treatment for neurological disorders.",
     },
     {
         icon: <FaTint />,
         title: "Diabetic Clinic",
-        desc: "Personalized diabetes care and long-term management.",
+        desc: "Specialized diabetes management with long-term care plans.",
     },
     {
         icon: <FaLungs />,
         title: "Asthma Clinic",
-        desc: "Expert respiratory care for asthma and breathing disorders.",
+        desc: "Advanced respiratory care for asthma and breathing conditions.",
     },
     {
-        icon: <FaWheelchair />,
-        title: "Physiotherapy",
-        desc: "Sports rehabilitation and physical therapy services.",
+        icon: <FaNotesMedical />,
+        title: "Thyroid Clinic",
+        desc: "Comprehensive evaluation and treatment for thyroid disorders.",
     },
     {
         icon: <FaAmbulance />,
         title: "Emergency Care",
-        desc: "24×7 emergency and critical care with ICU & HDU support.",
+        desc: "Prompt emergency medical care with trained professionals and advanced facilities.",
     },
 ];
 
