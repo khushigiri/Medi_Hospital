@@ -1,4 +1,4 @@
-import "./AboutHero.css";
+import "./About.css";
 import { motion } from "framer-motion";
 import {
     FaUserMd,
@@ -205,8 +205,6 @@ export default function About() {
                 </div>
 
             </section>
-
-            {/* ================= CORE VALUES ================= */}
 
             {/* ================= CORE VALUES ================= */}
 

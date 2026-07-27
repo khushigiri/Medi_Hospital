@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
 import "./Navbar.css";
-import hospitalInfo from "../../data/hospitalInfo";
+
+import hospitalLogo from "../../media/logo.png";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -23,9 +24,9 @@ function Navbar() {
             <div className="container navbar-container">
 
                 <Link to="/" className="logo">
-                    <img src="/logo.png" alt="Medi Hospital Logo" />
+                    <img src={hospitalLogo} alt="Medi Hospital Logo" />
                     <div>
-                        <h2>{hospitalInfo.name}</h2>
+                        <h2>Medi Hospital</h2>
                         <span><b>मेडी हॉस्पिटल</b></span>
                     </div>
                 </Link>
@@ -59,7 +60,7 @@ function Navbar() {
                 </nav>
 
                 <a
-                    href={`tel:${hospitalInfo.phone[0]}`}
+                    href="tel:+91-9241959991"
                     className="call-btn"
                 >
                     <FaPhoneAlt />

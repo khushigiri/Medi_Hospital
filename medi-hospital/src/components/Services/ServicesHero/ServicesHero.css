@@ -1,0 +1,218 @@
+.services-hero {
+    position: relative;
+    min-height: 130vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: url("../../../media/icu.jpeg") center/cover no-repeat;
+}
+
+/* ================= Overlay ================= */
+
+.services-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg,
+            rgba(7, 98, 102, 0.88) 0%,
+            rgba(10, 112, 115, 0.78) 35%,
+            rgba(15, 118, 110, 0.45) 65%,
+            rgba(255, 255, 255, 0.08) 100%);
+
+    backdrop-filter: blur(5px);
+}
+
+/* ================= Content ================= */
+
+.services-hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 720px;
+}
+
+/* ================= Tag ================= */
+
+.services-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+
+    padding: 14px 28px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, .82);
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+    font-size: .93rem;
+
+    backdrop-filter: blur(10px);
+
+    margin-bottom: 2rem;
+}
+
+.services-tag::before {
+    content: "🛡️";
+}
+
+/* ================= Heading ================= */
+
+.services-hero h1 {
+    font-size: clamp(3rem, 6vw, 4rem);
+    line-height: 1.12;
+    font-weight: 800;
+    margin-bottom: 1.4rem;
+    letter-spacing: -2px;
+}
+
+/* ================= Accent line ================= */
+
+.services-hero h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 6px;
+    border-radius: 20px;
+    margin-top: 28px;
+
+    background: linear-gradient(90deg,
+            #59dbc3,
+            #88ffe6);
+}
+
+/* ================= Paragraph ================= */
+
+.services-hero p {
+
+    max-width: 650px;
+
+    font-size: 1.25rem;
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, .93);
+
+    margin-bottom: 3rem;
+}
+
+/* ================= Floating Icon ================= */
+
+.floating-icon {
+
+    position: absolute;
+
+    right: 8%;
+
+    bottom: 30%;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #0d9488;
+
+    font-size: 3.2rem;
+
+    z-index: 3;
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, .22);
+}
+
+/* glowing rings */
+
+.floating-icon::before,
+.floating-icon::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -18px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(255, 255, 255, .25);
+
+    animation: pulse 3s infinite;
+}
+
+.floating-icon::after {
+
+    inset: -32px;
+
+    animation-delay: 1s;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(.95);
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: scale(1.12);
+
+        opacity: 0;
+    }
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px) {
+
+    .services-hero {
+
+        min-height: auto;
+
+        padding: 140px 0 100px;
+    }
+
+    .services-hero-content {
+
+        text-align: center;
+
+        margin: auto;
+    }
+
+    .services-hero h1::after {
+
+        margin-inline: auto;
+    }
+
+    .floating-icon {
+
+        position: relative;
+
+        right: auto;
+        bottom: auto;
+
+        margin: 60px auto 0;
+    }
+}
+
+@media(max-width:768px) {
+
+    .services-hero h1 {
+
+        font-size: 2.8rem;
+    }
+
+    .services-hero p {
+
+        font-size: 1.05rem;
+
+        line-height: 1.8;
+    }
+}

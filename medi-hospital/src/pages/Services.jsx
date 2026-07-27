@@ -1,9 +1,17 @@
-function Facilities() {
+import Navbar from "../components/Navbar/Navbar";
+import ServicesHero from "../components/Services/ServicesHero/ServicesHero";
+import ServicesSection from "../components/Services/ServicesSection/ServicesSection";
+import Footer from "../components/Footer/Footer";
+
+function Services() {
     return (
         <>
-            Facilities Page
+            <Navbar />
+            <ServicesHero />
+            <ServicesSection />
+            <Footer />
         </>
     );
 }
 
-export default Facilities;
+export default Services;

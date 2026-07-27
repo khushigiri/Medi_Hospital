@@ -1,4 +1,4 @@
-import "./Services.css";
+import "./ServicesPreview.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 

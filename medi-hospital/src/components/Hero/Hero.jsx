@@ -8,8 +8,8 @@ import {
     FaAmbulance
 } from "react-icons/fa";
 
+import doctorImg from "../../media/dr-nk-modi.png";
 import "./Hero.css";
-import hospitalInfo from "../../data/hospitalInfo";
 
 function Hero() {
     return (
@@ -32,7 +32,7 @@ function Hero() {
 
                     <div className="hero-badge">
                         <FaHeartbeat />
-                        <span>{hospitalInfo.tagline}</span>
+                        <span>AAPKA SVAASTH KA PAHALA KADAM</span>
                     </div>
 
                     <h1>
@@ -77,7 +77,7 @@ function Hero() {
 
                     <motion.img
                         className="hero-doctor-image"
-                        src="/doctors/dr-nk-modi.png"
+                        src={doctorImg}
                         alt="Dr. N. K. Modi"
                         animate={{
                             y: -12
@@ -100,7 +100,7 @@ function Hero() {
                         <FaUserMd />
                         <div>
                             <h4>Consultant</h4>
-                            <p>Physician</p>
+                            <p>General Physician</p>
                         </div>
                     </motion.div>
 

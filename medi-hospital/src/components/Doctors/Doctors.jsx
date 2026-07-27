@@ -1,5 +1,5 @@
 import "./Doctors.css";
-import doctorImg from "./dr-nk-modi.png";
+import doctorImg from "../../media/dr-nk-modi.png";
 
 import { motion } from "framer-motion";
 

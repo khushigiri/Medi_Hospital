@@ -2,7 +2,7 @@ import Loader from "../components/Loader/Loader";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import AboutPreview from "../components/About/AboutPreview/AboutPreview";
-import Services from "../components/Services/Services";
+import Services from "../components/Services/ServicesPreview/ServicesPreview";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import Doctors from "../components/Doctors/Doctors";
 import Testimonials from "../components/Testimonials/Testimonials";

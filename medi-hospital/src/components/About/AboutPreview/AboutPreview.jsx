@@ -1,5 +1,5 @@
 import "./AboutPreview.css";
-import aboutImg from "./about.png";
+import aboutImg from "../../../media/hospital.png";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";

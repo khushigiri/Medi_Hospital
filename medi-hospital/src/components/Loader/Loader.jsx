@@ -1,6 +1,6 @@
 import "./Loader.css";
 import { useEffect, useState } from "react";
-import logo from "./logo.png";
+import logo from "../../media/logo.png";
 
 function Loader() {
     const [loading, setLoading] = useState(true);
