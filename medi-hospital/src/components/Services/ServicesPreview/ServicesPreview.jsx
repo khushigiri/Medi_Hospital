@@ -95,7 +95,7 @@ export default function Services() {
             </motion.div>
 
             <motion.div
-                className="services-grid"
+                className="services-preview-grid"
                 variants={container}
                 initial="hidden"
                 whileInView="show"

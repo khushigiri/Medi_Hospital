@@ -29,7 +29,7 @@
     text-align: justify;
 }
 
-.services-grid {
+.services-preview-grid {
     margin-top: 60px;
 
     display: grid;
@@ -148,7 +148,7 @@
         font-size: 30px;
     }
 
-    .services-grid {
+    .services-preview-grid {
         gap: 20px;
     }
 
