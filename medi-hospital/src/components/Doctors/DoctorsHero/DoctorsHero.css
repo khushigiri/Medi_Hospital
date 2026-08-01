@@ -1,0 +1,185 @@
+.doctors-hero {
+    height: 70vh;
+    min-height: 550px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../../../media/dr-nk-modi.png") center/cover no-repeat;
+
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(8, 41, 77, 0.55);
+    backdrop-filter: blur(3px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 760px;
+    text-align: center;
+    color: white;
+
+    padding: 0 20px;
+}
+
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(10px);
+
+    padding: 10px 20px;
+
+    border-radius: 40px;
+
+    margin-bottom: 28px;
+
+    font-size: .95rem;
+}
+
+.hero-tag svg {
+    color: #4fd1ff;
+}
+
+.hero-content h1 {
+
+    font-size: 3.8rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+
+}
+
+.hero-content h1 span {
+
+    color: #5cc8ff;
+
+}
+
+.hero-content p {
+
+    font-size: 1.08rem;
+    line-height: 1.9;
+    color: #e8eef5;
+
+    margin-bottom: 40px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+
+}
+
+.primary-btn,
+.secondary-btn {
+
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: .35s;
+
+}
+
+.primary-btn {
+
+    background: #1a73e8;
+    color: white;
+
+}
+
+.primary-btn:hover {
+
+    background: #0f5fd3;
+    transform: translateY(-4px);
+
+}
+
+.secondary-btn {
+
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .35);
+
+    color: white;
+
+    backdrop-filter: blur(8px);
+
+}
+
+.secondary-btn:hover {
+
+    background: white;
+    color: #14375a;
+
+}
+
+@media(max-width:992px) {
+
+    .hero-content h1 {
+
+        font-size: 3rem;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .doctors-hero {
+
+        height: 65vh;
+        min-height: 500px;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 2.4rem;
+
+    }
+
+    .hero-content p {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .hero-content h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .primary-btn,
+    .secondary-btn {
+
+        width: 100%;
+
+    }
+
+}

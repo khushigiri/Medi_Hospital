@@ -1,0 +1,389 @@
+/* ===========================
+   PATIENT WARDS
+=========================== */
+
+.wards {
+    padding: 110px 8%;
+    background: linear-gradient(180deg, #f8fcff 0%, #eef7ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.wards::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: rgba(26, 115, 232, 0.08);
+    border-radius: 50%;
+    top: -160px;
+    right: -120px;
+    filter: blur(80px);
+}
+
+.wards::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 188, 212, 0.08);
+    border-radius: 50%;
+    bottom: -140px;
+    left: -100px;
+    filter: blur(80px);
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.section-title {
+    max-width: 760px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title span {
+    display: inline-block;
+    color: #0f766e;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin: 14px 0 18px;
+    font-size: 2.8rem;
+    color: #14375a;
+    line-height: 1.2;
+}
+
+.section-title p {
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.wards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.ward-card {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 28px;
+    overflow: hidden;
+    transition: .45s ease;
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, .08);
+    position: relative;
+}
+
+.ward-card:hover {
+    transform: translateY(-12px);
+    box-shadow:
+        0 25px 55px rgba(15, 23, 42, .15);
+}
+
+/* glowing border */
+
+.ward-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    padding: 1.5px;
+
+    border-radius: 28px;
+
+    background: linear-gradient(135deg,
+            #22c1c3,
+            #1a73e8,
+            #22c1c3);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+
+    mask-composite: exclude;
+
+    opacity: 0;
+
+    transition: .45s;
+
+}
+
+.ward-card:hover::before {
+
+    opacity: 1;
+
+}
+
+/* ===========================
+ IMAGE
+=========================== */
+
+.image-box {
+
+    position: relative;
+
+    height: 240px;
+
+    overflow: hidden;
+
+}
+
+.image-box img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .8s;
+
+}
+
+.image-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(to top,
+            rgba(20, 55, 90, .78),
+            rgba(20, 55, 90, .05));
+
+    opacity: .25;
+
+    transition: .45s;
+
+}
+
+.ward-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+.ward-card:hover .image-overlay {
+
+    opacity: .95;
+
+}
+
+/* ===========================
+ ICON
+=========================== */
+
+.ward-icon {
+
+    position: absolute;
+
+    bottom: -28px;
+
+    left: 30px;
+
+    width: 68px;
+
+    height: 68px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 1.6rem;
+
+    color: #1a73e8;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+
+    transition: .4s;
+
+}
+
+.ward-card:hover .ward-icon {
+
+    background: #1a73e8;
+
+    color: white;
+
+    transform: rotate(-8deg) scale(1.08);
+
+}
+
+/* ===========================
+ CONTENT
+=========================== */
+
+.ward-content {
+
+    padding: 48px 28px 28px;
+
+}
+
+.ward-content h3 {
+
+    color: #14375a;
+
+    margin-bottom: 14px;
+
+    font-size: 1.35rem;
+
+}
+
+.ward-content p {
+
+    color: #64748b;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+
+}
+
+/* ===========================
+ CHIPS
+=========================== */
+
+.chips {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+.chips span {
+
+    background: #eef7ff;
+
+    color: #1a73e8;
+
+    padding: 8px 15px;
+
+    border-radius: 40px;
+
+    font-size: .82rem;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+}
+
+.ward-card:hover .chips span {
+
+    background: #1a73e8;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+/* ===========================
+ ARROW
+=========================== */
+
+.ward-card:hover .ward-arrow {
+
+    width: 58px;
+
+    background: #1a73e8;
+
+    color: white;
+
+    transform: translateX(8px);
+
+}
+
+/* ===========================
+ RESPONSIVE
+=========================== */
+
+@media(max-width:1100px) {
+
+    .wards-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .wards {
+
+        padding: 80px 6%;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .wards-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+    }
+
+    .image-box {
+
+        height: 220px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .section-title h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .ward-content {
+
+        padding: 45px 22px 22px;
+
+    }
+
+}

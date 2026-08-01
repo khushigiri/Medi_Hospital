@@ -1,0 +1,272 @@
+/* ==========================================
+   FACILITIES SECTION
+========================================== */
+
+.facilities-section {
+    padding: 100px 8%;
+    background: #f8fbff;
+    position: relative;
+}
+
+.facilities-section::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: rgba(26, 115, 232, 0.05);
+    border-radius: 50%;
+    top: -180px;
+    right: -150px;
+    filter: blur(80px);
+}
+
+.facilities-section::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(14, 165, 233, 0.05);
+    border-radius: 50%;
+    bottom: -150px;
+    left: -120px;
+    filter: blur(80px);
+}
+
+.facility-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-header {
+    text-align: center;
+    max-width: 760px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.section-header span {
+    display: inline-block;
+    color: #0f766e;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.section-header h2 {
+    margin: 15px 0;
+    font-size: 2.8rem;
+    color: #12395b;
+}
+
+.section-header p {
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ==========================================
+   ROW
+========================================== */
+
+.facility-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    margin-bottom: 120px;
+}
+
+.facility-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.facility-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 28px;
+    position: relative;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.facility-image img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    display: block;
+    transition: 0.6s;
+}
+
+.facility-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(18, 57, 91, 0.08),
+            rgba(18, 57, 91, 0.18));
+}
+
+.facility-row:hover .facility-image img {
+    transform: scale(1.08);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.facility-content {
+    flex: 1;
+}
+
+.facility-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.facility-title .icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #1a73e8, #0ea5e9);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.facility-title h3 {
+    font-size: 2rem;
+    color: #14375a;
+}
+
+.facility-content p {
+    color: #64748b;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.facility-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facility-content li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    color: #475569;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.facility-content li svg {
+    color: #0ea5e9;
+    font-size: 1.1rem;
+}
+
+.facility-content li:hover {
+    transform: translateX(10px);
+    color: #1a73e8;
+}
+
+/* ==========================================
+   DECORATIVE LINE
+========================================== */
+
+.facility-row:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 70px;
+    margin-top: 35px;
+    background: linear-gradient(to bottom,
+            transparent,
+            #1a73e8,
+            transparent);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .facility-row,
+    .facility-row.reverse {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 90px;
+    }
+
+    .facility-image,
+    .facility-content {
+        width: 100%;
+    }
+
+    .facility-image img {
+        height: 380px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .facilities-section {
+        padding: 80px 6%;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .facility-title h3 {
+        font-size: 1.6rem;
+    }
+
+    .facility-image img {
+        height: 280px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .section-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .facility-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .facility-title .icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .facility-content p {
+        font-size: 0.95rem;
+    }
+
+}

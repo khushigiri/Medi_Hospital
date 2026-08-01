@@ -4,7 +4,7 @@ import Hero from "../components/Hero/Hero";
 import AboutPreview from "../components/About/AboutPreview/AboutPreview";
 import Services from "../components/Services/ServicesPreview/ServicesPreview";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
-import Doctors from "../components/Doctors/Doctors";
+import DoctorsPreview from "../components/Doctors/DoctorsPreview/DoctorsPreview";
 import Testimonials from "../components/Testimonials/Testimonials";
 import FAQ from "../components/FAQ/FAQ";
 import Contact from "../components/Contact/Contact";
@@ -21,7 +21,7 @@ function Home() {
       <AboutPreview />
       <Services />
       <WhyChooseUs />
-      <Doctors />
+      <DoctorsPreview />
       <Testimonials />
       <FAQ />
       <Contact />

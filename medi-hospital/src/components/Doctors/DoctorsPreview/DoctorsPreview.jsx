@@ -1,5 +1,5 @@
-import "./Doctors.css";
-import doctorImg from "../../media/dr-nk-modi.png";
+import "./DoctorsPreview.css";
+import doctorImg from "../../../media/dr-nk-modi.png";
 
 import { motion } from "framer-motion";
 
@@ -9,7 +9,7 @@ import {
     FaArrowRight,
 } from "react-icons/fa";
 
-function Doctor() {
+function DoctorsPreview() {
     return (
         <section className="doctor-section" id="doctor">
 
@@ -120,4 +120,4 @@ function Doctor() {
     );
 }
 
-export default Doctor;
+export default DoctorsPreview;
