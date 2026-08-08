@@ -34,7 +34,7 @@ const wards = [
         chips: ["Clean", "Doctors", "Comfort"],
     },
     {
-        title: "High Dependency Unit",
+        title: "High Dependency Unit (HDU)",
         icon: <FaHeartbeat />,
         image: hdu,
         description:
@@ -42,7 +42,7 @@ const wards = [
         chips: ["Monitoring", "Critical Care", "Specialists"],
     },
     {
-        title: "Intensive Care Unit",
+        title: "Intensive Care Unit (ICU)",
         icon: <FaProcedures />,
         image: icu,
         description:

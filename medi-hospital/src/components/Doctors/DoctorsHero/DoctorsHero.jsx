@@ -1,39 +1,55 @@
 import "./DoctorsHero.css";
-import { FaUserMd } from "react-icons/fa";
-import { Link } from "react-router-dom";
-
-export default function DoctorsHero() {
+import doctorsWithPatientsImg from "../../../media/doctorsWithPatients.png";
+function DoctorsHero() {
     return (
         <section className="doctors-hero">
 
-            <div className="hero-overlay"></div>
+            {/* Doctor consultation image */}
+            <div className="doctors-hero-image">
+                <img
+                    src={doctorsWithPatientsImg}
+                    alt="Doctor consulting with patients"
+                />
+            </div>
 
-            <div className="hero-content">
+            {/* Soft blend between content and image */}
+            <div className="doctors-hero-blend"></div>
 
-                <span className="hero-tag">
-                    <FaUserMd />
-                    Our Medical Experts
+            {/* Hero content */}
+            <div className="doctors-hero-content">
+
+                <span className="doctors-hero-tag">
+                    OUR MEDICAL EXPERTS
                 </span>
 
                 <h1>
-                    Meet Our <span>Experienced Doctors</span>
+                    Expert Doctors.
+                    <br />
+                    <span>Compassionate Care.</span>
                 </h1>
 
                 <p>
-                    Dedicated healthcare professionals committed to providing
-                    compassionate treatment, accurate diagnosis, and personalized care
-                    for every patient.
+                    Meet our experienced team of doctors dedicated to
+                    providing trusted medical care with expertise,
+                    compassion, and personalized attention.
                 </p>
 
-                <div className="hero-buttons">
+                <div className="doctors-hero-actions">
 
-                    <Link to="/contact" className="primary-btn">
-                        Contact Hospital
-                    </Link>
+                    <a
+                        href="#doctors"
+                        className="doctors-primary-btn"
+                    >
+                        Meet Our Doctors
+                        <span>→</span>
+                    </a>
 
-                    <Link to="/services" className="secondary-btn">
-                        Explore Services
-                    </Link>
+                    <a
+                        href="/contact"
+                        className="doctors-secondary-btn"
+                    >
+                        Book an Appointment
+                    </a>
 
                 </div>
 
@@ -42,3 +58,5 @@ export default function DoctorsHero() {
         </section>
     );
 }
+
+export default DoctorsHero;

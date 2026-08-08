@@ -71,9 +71,7 @@ function Contact() {
                             <div>
                                 <h4>Address</h4>
                                 <p>
-                                    Medi Hospital
-                                    <br />
-                                    Dhanbad, Jharkhand
+                                    8 Lane, Bhiphore Hirak Rd, opposite SB International Hotel, Sugiadih, Tapowan colony, Dhanbad, Jharkhand 826010
                                 </p>
                             </div>
                         </div>
@@ -83,9 +81,11 @@ function Contact() {
                             <div>
                                 <h4>Doctor OPD</h4>
                                 <p>
-                                    Mon–Sat : Morning & Evening
+                                    Morning : 09:30 AM - 12:30 PM
                                     <br />
-                                    Sunday : Evening OPD Closed
+                                    Evening : 04:30 PM - 06:30 PM
+                                    <br />
+                                    (Sunday Evening: No OPD)
                                 </p>
                             </div>
                         </div>

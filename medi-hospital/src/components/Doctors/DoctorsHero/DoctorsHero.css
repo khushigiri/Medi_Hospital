@@ -1,185 +1,490 @@
+/* =========================================
+   DOCTORS HERO
+========================================= */
+
 .doctors-hero {
-    height: 70vh;
-    min-height: 550px;
     position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: calc(100vh - 80px);
 
-    background: url("../../../media/dr-nk-modi.png") center/cover no-repeat;
+    min-height: 120vh;
+    max-height: 160vh;
 
     overflow: hidden;
+
+    background: #ffffff;
 }
 
-.hero-overlay {
+
+/* =========================================
+   DOCTOR IMAGE
+========================================= */
+
+.doctors-hero-image {
     position: absolute;
-    inset: 0;
 
-    background: rgba(8, 41, 77, 0.55);
-    backdrop-filter: blur(3px);
-}
+    top: 0;
+    right: 0;
 
-.hero-content {
-    position: relative;
-    z-index: 2;
+    height: 100%;
 
-    max-width: 760px;
-    text-align: center;
-    color: white;
-
-    padding: 0 20px;
-}
-
-.hero-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-
-    background: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(10px);
-
-    padding: 10px 20px;
-
-    border-radius: 40px;
-
-    margin-bottom: 28px;
-
-    font-size: .95rem;
-}
-
-.hero-tag svg {
-    color: #4fd1ff;
-}
-
-.hero-content h1 {
-
-    font-size: 3.8rem;
-    line-height: 1.2;
-    margin-bottom: 25px;
-
-}
-
-.hero-content h1 span {
-
-    color: #5cc8ff;
-
-}
-
-.hero-content p {
-
-    font-size: 1.08rem;
-    line-height: 1.9;
-    color: #e8eef5;
-
-    margin-bottom: 40px;
-
-}
-
-.hero-buttons {
+    z-index: 0;
 
     display: flex;
-    justify-content: center;
-    gap: 18px;
-    flex-wrap: wrap;
-
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.primary-btn,
-.secondary-btn {
+.doctors-hero-image img {
+    height: 100%;
+    width: auto;
+
+    max-width: none;
+
+    display: block;
+
+    /*
+     IMPORTANT:
+     We are NOT using object-fit: cover.
+
+     The image keeps its original aspect ratio,
+     so the doctor does not get unnecessarily
+     zoomed in.
+  */
+}
+
+
+/* =========================================
+   SOFT IMAGE BLEND
+========================================= */
+
+.doctors-hero-blend {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(90deg,
+
+            rgba(255, 255, 255, 1) 0%,
+
+            rgba(255, 255, 255, 1) 18%,
+
+            rgba(255, 255, 255, 0.98) 27%,
+
+            rgba(255, 255, 255, 0.88) 35%,
+
+            rgba(255, 255, 255, 0.58) 43%,
+
+            rgba(255, 255, 255, 0.25) 50%,
+
+            rgba(255, 255, 255, 0.05) 58%,
+
+            rgba(255, 255, 255, 0) 66%);
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.doctors-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1200px, 90%);
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding-bottom: 20px;
+}
+
+
+/* =========================================
+   TAG
+========================================= */
+
+.doctors-hero-tag {
+    width: fit-content;
+
+    margin-bottom: 20px;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: rgba(240, 247, 255, 0.82);
+
+    border: 1px solid rgba(0, 82, 184, 0.18);
+
+    color: #0052b8;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.doctors-hero-content h1 {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #102d52;
+
+    font-size: clamp(46px, 5vw, 66px);
+
+    line-height: 1.07;
+
+    font-weight: 700;
+
+    letter-spacing: -2.2px;
+}
+
+.doctors-hero-content h1 span {
+    color: #1261c9;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.doctors-hero-content p {
+    max-width: 500px;
+
+    margin: 24px 0 32px;
+
+    color: #53667d;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.doctors-hero-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+/* =========================================
+   BUTTON BASE
+========================================= */
+
+.doctors-primary-btn,
+.doctors-secondary-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 23px;
+
+    border-radius: 7px;
 
     text-decoration: none;
-    padding: 15px 32px;
-    border-radius: 40px;
+
+    font-size: 14px;
+
     font-weight: 600;
-    transition: .35s;
 
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
 }
 
-.primary-btn {
 
-    background: #1a73e8;
-    color: white;
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
 
+.doctors-primary-btn {
+    gap: 12px;
+
+    background: #075bc5;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 22px rgba(7, 91, 197, 0.20);
 }
 
-.primary-btn:hover {
+.doctors-primary-btn span {
+    font-size: 19px;
 
-    background: #0f5fd3;
-    transform: translateY(-4px);
+    line-height: 1;
 
+    transition: transform 0.25s ease;
 }
 
-.secondary-btn {
+.doctors-primary-btn:hover {
+    background: #064fae;
 
-    background: rgba(255, 255, 255, .12);
-    border: 1px solid rgba(255, 255, 255, .35);
+    transform: translateY(-2px);
 
-    color: white;
-
-    backdrop-filter: blur(8px);
-
+    box-shadow:
+        0 12px 28px rgba(7, 91, 197, 0.28);
 }
 
-.secondary-btn:hover {
-
-    background: white;
-    color: #14375a;
-
+.doctors-primary-btn:hover span {
+    transform: translateX(4px);
 }
 
-@media(max-width:992px) {
 
-    .hero-content h1 {
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
 
-        font-size: 3rem;
+.doctors-secondary-btn {
+    background: rgba(255, 255, 255, 0.82);
 
-    }
+    border: 1px solid #cbd7e5;
 
+    color: #17406d;
+
+    backdrop-filter: blur(7px);
 }
 
-@media(max-width:768px) {
+.doctors-secondary-btn:hover {
+    background: #ffffff;
+
+    border-color: #075bc5;
+
+    color: #075bc5;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
 
     .doctors-hero {
+        height: 650px;
 
-        height: 65vh;
-        min-height: 500px;
-
+        min-height: 650px;
     }
 
-    .hero-content h1 {
-
-        font-size: 2.4rem;
-
+    .doctors-hero-image {
+        right: -40px;
     }
 
-    .hero-content p {
-
-        font-size: 1rem;
-
+    .doctors-hero-image img {
+        height: 100%;
     }
 
+    .doctors-hero-blend {
+        background:
+            linear-gradient(90deg,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(255, 255, 255, 0.98) 20%,
+                rgba(255, 255, 255, 0.88) 32%,
+                rgba(255, 255, 255, 0.55) 44%,
+                rgba(255, 255, 255, 0.18) 58%,
+                rgba(255, 255, 255, 0) 72%);
+    }
+
+    .doctors-hero-content {
+        width: 90%;
+    }
+
+    .doctors-hero-content h1 {
+        font-size: 54px;
+    }
+
+    .doctors-hero-content p {
+        max-width: 450px;
+    }
 }
 
-@media(max-width:480px) {
 
-    .hero-content h1 {
+/* =========================================
+   MOBILE
+========================================= */
 
-        font-size: 2rem;
+@media (max-width: 700px) {
 
+    .doctors-hero {
+        height: 760px;
+
+        min-height: 760px;
     }
 
-    .hero-buttons {
 
-        flex-direction: column;
+    /* Image moves to lower portion */
 
-    }
-
-    .primary-btn,
-    .secondary-btn {
+    .doctors-hero-image {
+        top: auto;
+        right: 0;
+        bottom: 0;
 
         width: 100%;
+        height: 52%;
 
+        justify-content: center;
+        align-items: flex-end;
+
+        overflow: hidden;
     }
 
+    .doctors-hero-image img {
+        width: auto;
+        height: 100%;
+
+        max-width: none;
+    }
+
+
+    /* Mobile blend */
+
+    .doctors-hero-blend {
+        background:
+            linear-gradient(180deg,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(255, 255, 255, 0.98) 34%,
+                rgba(255, 255, 255, 0.84) 46%,
+                rgba(255, 255, 255, 0.40) 65%,
+                rgba(255, 255, 255, 0) 82%);
+    }
+
+
+    /* Content */
+
+    .doctors-hero-content {
+        width: 88%;
+
+        height: auto;
+
+        min-height: 760px;
+
+        justify-content: flex-start;
+
+        padding-top: 52px;
+    }
+
+
+    /* Tag */
+
+    .doctors-hero-tag {
+        margin-bottom: 17px;
+
+        padding: 7px 13px;
+
+        font-size: 10px;
+
+        letter-spacing: 1.2px;
+    }
+
+
+    /* Heading */
+
+    .doctors-hero-content h1 {
+        max-width: 380px;
+
+        font-size: 40px;
+
+        line-height: 1.1;
+
+        letter-spacing: -1px;
+    }
+
+
+    /* Description */
+
+    .doctors-hero-content p {
+        max-width: 360px;
+
+        margin: 18px 0 25px;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Buttons */
+
+    .doctors-hero-actions {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .doctors-primary-btn,
+    .doctors-secondary-btn {
+        min-height: 46px;
+
+        padding: 0 20px;
+
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .doctors-hero {
+        height: 750px;
+
+        min-height: 750px;
+    }
+
+    .doctors-hero-content {
+        min-height: 750px;
+
+        padding-top: 45px;
+    }
+
+    .doctors-hero-content h1 {
+        font-size: 36px;
+    }
+
+    .doctors-hero-content p {
+        font-size: 14px;
+    }
+
+    .doctors-hero-image {
+        height: 48%;
+    }
 }

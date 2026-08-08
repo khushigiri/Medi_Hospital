@@ -1,0 +1,611 @@
+/* =========================================
+   OUR MEDICAL TEAM
+========================================= */
+
+.doctors-team {
+    position: relative;
+
+    width: 100%;
+
+    padding: 110px 0 120px;
+
+    background: #f7faff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.doctors-team-header {
+    width: min(850px, 90%);
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+}
+
+
+.doctors-section-label {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: #0862c8;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+}
+
+
+.doctors-team-header h2 {
+    margin: 0;
+
+    color: #102d52;
+
+    font-size: clamp(38px, 4vw, 54px);
+
+    line-height: 1.12;
+
+    letter-spacing: -1.5px;
+}
+
+
+.doctors-team-header h2 span {
+    color: #1261c9;
+}
+
+
+.doctors-team-header p {
+    max-width: 650px;
+
+    margin: 20px auto 0;
+
+    color: #697a8e;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   DOCTOR SHOWCASE
+========================================= */
+
+.doctor-showcase {
+    position: relative;
+
+    width: min(1180px, 90%);
+
+    min-height: 570px;
+
+    margin: 0 auto 90px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 60px rgba(21, 61, 105, 0.08);
+}
+
+
+.doctor-showcase:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   DOCTOR IMAGE
+========================================= */
+
+.doctor-image-wrapper {
+    position: relative;
+
+    height: 570px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(145deg,
+            #edf5ff,
+            #dcecff);
+}
+
+
+.doctor-image-bg {
+    position: absolute;
+
+    width: 390px;
+    height: 390px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    top: 70px;
+}
+
+
+.doctor-image {
+    position: relative;
+
+    z-index: 1;
+
+    height: 92%;
+
+    width: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    object-position: bottom center;
+}
+
+
+/* =========================================
+   IMAGE BADGE
+========================================= */
+
+.doctor-image-badge {
+    position: absolute;
+
+    z-index: 3;
+
+    left: 28px;
+    bottom: 28px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 5px;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 8px 25px rgba(25, 58, 95, 0.12);
+
+    backdrop-filter: blur(8px);
+}
+
+
+.doctor-image-badge span {
+    color: #0862c8;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.doctor-image-badge strong {
+    color: #f39a12;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DOCTOR INFORMATION
+========================================= */
+
+.doctor-info {
+    position: relative;
+
+    padding: 65px 65px;
+}
+
+
+/* =========================================
+   ROLE
+========================================= */
+
+.doctor-role {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: #0862c8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.doctor-info h3 {
+    position: relative;
+
+    margin: 0 0 12px;
+
+    color: #102d52;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================
+   SPECIALITY
+========================================= */
+
+.doctor-speciality {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    color: #1261c9;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+.doctor-speciality span {
+    width: 28px;
+    height: 2px;
+
+    background: #1261c9;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.doctor-description {
+    max-width: 480px;
+
+    margin: 0 0 30px;
+
+    color: #66788c;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   EXPERTISE
+========================================= */
+
+.doctor-expertise {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    max-width: 500px;
+
+    margin-bottom: 32px;
+}
+
+
+.expertise-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px;
+
+    border: 1px solid #e5edf5;
+
+    border-radius: 10px;
+
+    background: #fbfdff;
+}
+
+
+.expertise-icon {
+    flex-shrink: 0;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e9f3ff;
+
+    color: #0862c8;
+
+    font-size: 15px;
+}
+
+
+.expertise-item strong {
+    display: block;
+
+    color: #203f61;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.expertise-item small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #8795a5;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   APPOINTMENT BUTTON
+========================================= */
+
+.doctor-appointment-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-height: 48px;
+
+    padding: 0 20px;
+
+    border-radius: 7px;
+
+    background: #075bc5;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 8px 20px rgba(7, 91, 197, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.doctor-appointment-btn span {
+    font-size: 18px;
+
+    transition: transform 0.25s ease;
+}
+
+
+.doctor-appointment-btn:hover {
+    background: #064fae;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(7, 91, 197, 0.25);
+}
+
+
+.doctor-appointment-btn:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   SECOND DOCTOR
+========================================= */
+
+.doctor-showcase-two .doctor-image-wrapper {
+    order: 2;
+}
+
+
+.doctor-showcase-two .doctor-info {
+    order: 1;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.doctor-showcase {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.doctor-showcase:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 25px 70px rgba(21, 61, 105, 0.12);
+}
+
+
+.doctor-showcase:hover .doctor-image-bg {
+    transform: scale(1.04);
+}
+
+
+.doctor-image-bg {
+    transition: transform 0.5s ease;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .doctors-team {
+        padding: 85px 0 90px;
+    }
+
+
+    .doctor-showcase {
+        grid-template-columns: 1fr;
+
+        width: 92%;
+    }
+
+
+    .doctor-image-wrapper {
+        height: 480px;
+
+        order: 1 !important;
+    }
+
+
+    .doctor-info {
+        order: 2 !important;
+
+        padding: 50px 45px 55px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .doctors-team {
+        padding: 70px 0 75px;
+    }
+
+
+    .doctors-team-header {
+        margin-bottom: 50px;
+    }
+
+
+    .doctors-team-header h2 {
+        font-size: 36px;
+    }
+
+
+    .doctors-team-header p {
+        font-size: 14px;
+    }
+
+
+    .doctor-showcase {
+        width: 92%;
+
+        margin-bottom: 55px;
+
+        border-radius: 16px;
+    }
+
+
+    .doctor-image-wrapper {
+        height: 390px;
+    }
+
+
+    .doctor-image-bg {
+        width: 280px;
+        height: 280px;
+
+        top: 45px;
+    }
+
+
+    .doctor-info {
+        padding: 38px 25px 42px;
+    }
+
+
+    .doctor-role {
+        font-size: 10px;
+    }
+
+
+    .doctor-info h3 {
+        font-size: 30px;
+    }
+
+
+    .doctor-speciality {
+        font-size: 13px;
+    }
+
+
+    .doctor-description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .doctor-expertise {
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+    }
+
+
+    .doctor-image-badge {
+        left: 18px;
+        bottom: 18px;
+    }
+}
