@@ -41,22 +41,27 @@ function Gallery() {
                 {
                     src: hospitalImg,
                     title: "Our Hospital",
+                    description: "A welcoming healthcare environment designed for comfort and quality care.",
                 },
                 {
                     src: receptionImg,
                     title: "Reception",
+                    description: "A warm and welcoming first point of contact for every patient and visitor.",
                 },
                 {
                     src: waitingAreaImg,
                     title: "Waiting Area",
+                    description: "A comfortable and peaceful space for patients and their families.",
                 },
                 {
                     src: genWardImg,
                     title: "General Ward",
+                    description: "A clean and comfortable setting supporting safe and attentive patient care.",
                 },
                 {
                     src: cabinImg,
                     title: "Cabin",
+                    description: "A private and comfortable space designed for focused patient care and recovery.",
                 },
             ],
         },
@@ -69,22 +74,27 @@ function Gallery() {
                 {
                     src: medTeamImg,
                     title: "Our Medical Team",
+                    description: "A dedicated team of healthcare professionals committed to patient well-being.",
                 },
                 {
                     src: docConsultImg,
                     title: "Doctor Consultation",
+                    description: "Personalized consultations focused on understanding and addressing patient needs.",
                 },
                 {
                     src: nursingTeamImg,
                     title: "Nursing Team",
+                    description: "Compassionate nursing professionals providing attentive care throughout the journey.",
                 },
                 {
                     src: techniciansAndSuppStaffImg,
                     title: "Technicians and Support Staff",
+                    description: "Skilled support teams helping ensure smooth and efficient hospital services.",
                 },
                 {
                     src: pharmaImg,
                     title: "Medi Pharma",
+                    description: "Convenient access to essential medicines and pharmaceutical support.",
                 },
             ],
         },
@@ -97,18 +107,22 @@ function Gallery() {
                 {
                     src: patientCareImg,
                     title: "Patient Care",
+                    description: "Patient-focused care delivered with compassion, attention and understanding.",
                 },
                 {
                     src: docConsultImg,
                     title: "Consultation",
+                    description: "Thoughtful medical guidance helping patients make informed healthcare decisions.",
                 },
                 {
                     src: nursingCareImg,
                     title: "Nursing Care",
+                    description: "Dedicated nursing support focused on comfort, safety and recovery.",
                 },
                 {
                     src: patientSupportImg,
                     title: "Patient Support",
+                    description: "Helping patients and families feel supported, informed and cared for.",
                 },
             ],
         },
@@ -121,18 +135,22 @@ function Gallery() {
                 {
                     src: healthCampImg,
                     title: "Health Camp",
+                    description: "Community-focused healthcare initiatives promoting early care and wellness.",
                 },
                 {
                     src: awarenessProgramImg,
                     title: "Awareness Program",
+                    description: "Educational initiatives encouraging greater awareness about health and prevention.",
                 },
                 {
                     src: hospitalEventImg,
                     title: "Hospital Event",
+                    description: "Meaningful moments that bring our healthcare community together.",
                 },
                 {
                     src: specCelebrationImg,
                     title: "Special Celebration",
+                    description: "Celebrating important moments and creating memorable experiences together.",
                 },
             ],
         },
@@ -145,18 +163,22 @@ function Gallery() {
                 {
                     src: medEquipImg,
                     title: "Medical Equipment",
+                    description: "Essential medical equipment supporting accurate and efficient patient care.",
                 },
                 {
                     src: diagFacilityImg,
                     title: "Diagnostic Facility",
+                    description: "A well-equipped environment supporting reliable diagnostic services.",
                 },
                 {
                     src: treatRoom,
                     title: "Treatment Room",
+                    description: "A clean and organized space designed for safe and focused treatment.",
                 },
                 {
                     src: clinicalFacilityImg,
                     title: "Clinical Facility",
+                    description: "Purpose-built clinical spaces supporting professional and quality healthcare.",
                 },
             ],
         },
@@ -171,15 +193,19 @@ function Gallery() {
 
                 {/* ================= HERO ================= */}
                 <section className="gallery-hero">
+
                     <div className="gallery-hero-bg"></div>
 
+                    <div className="gallery-hero-overlay"></div>
+
                     <div className="gallery-hero-content">
+
                         <span className="gallery-eyebrow">
-                            LIFE AT MEDI HOSPITAL
+                            OUR GALLERY
                         </span>
 
                         <h1>
-                            Our <span>Gallery</span>
+                            Moments of <span>Care</span>
                         </h1>
 
                         <p>
@@ -188,7 +214,9 @@ function Gallery() {
                         </p>
 
                         <div className="gallery-hero-line"></div>
+
                     </div>
+
                 </section>
 
 
@@ -233,6 +261,7 @@ function Gallery() {
 
                                             <div className="gallery-image-info">
                                                 <span>{image.title}</span>
+                                                <p>{image.description}</p>
                                             </div>
 
                                             <div className="gallery-expand">
@@ -280,7 +309,8 @@ function Gallery() {
                         />
 
                         <div className="gallery-lightbox-caption">
-                            {selectedImage.title}
+                            <h3>{selectedImage.title}</h3>
+                            <p>{selectedImage.description}</p>
                         </div>
 
                     </div>

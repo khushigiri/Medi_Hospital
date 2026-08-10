@@ -14,26 +14,25 @@
 ========================================================= */
 
 .gallery-hero {
-    min-height: 470px;
     position: relative;
+    width: 100%;
+    min-height: 650px;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background:
-        linear-gradient(135deg,
-            rgba(235, 247, 251, 0.98),
-            rgba(248, 252, 253, 0.98));
+    background: #eef7fc;
 }
 
 .gallery-hero-bg {
     position: absolute;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    right: -180px;
-    top: -220px;
-    background: rgba(21, 154, 184, 0.08);
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../media/hospitalTeam.png);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .gallery-hero-bg::after {
@@ -261,8 +260,15 @@
 
 .gallery-image-info span {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.gallery-image-info p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
     letter-spacing: 0.2px;
 }
 
@@ -324,6 +330,10 @@
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
+}
+
+.gallery-lightbox-caption h3 {
+    margin-bottom: 5px
 }
 
 .gallery-lightbox-close {
