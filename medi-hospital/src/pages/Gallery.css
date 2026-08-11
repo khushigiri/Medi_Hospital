@@ -13,82 +13,221 @@
    HERO
 ========================================================= */
 
+
 .gallery-hero {
     position: relative;
     width: 100%;
-    min-height: 650px;
+    height: 500px;
+    min-height: 500px;
+
     overflow: hidden;
+
     display: flex;
     align-items: center;
-    background: #eef7fc;
+
+    background:
+        linear-gradient(110deg,
+            #e5f5fd 0%,
+            #eaf7fd 22%,
+            #eef9fd 42%,
+            #f3fafd 58%,
+            #ffffff 76%,
+            #ffffff 100%);
+}
+
+.gallery-hero::before {
+    content: "";
+
+    position: absolute;
+
+    left: -110px;
+    bottom: -175px;
+
+    width: 390px;
+    height: 390px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle,
+            rgba(91, 174, 224, 0.13) 0%,
+            rgba(91, 174, 224, 0.07) 48%,
+            rgba(91, 174, 224, 0) 72%);
+
+    z-index: 2;
+}
+
+
+.gallery-hero::after {
+    content: "✚   ·   ✚   ·";
+
+    position: absolute;
+
+    left: 55px;
+    bottom: 30px;
+
+    color: rgba(36, 132, 205, 0.14);
+
+    font-size: 18px;
+
+    letter-spacing: 13px;
+
+    transform: rotate(-12deg);
+
+    z-index: 4;
 }
 
 .gallery-hero-bg {
     position: absolute;
-    inset: 0;
-    width: 100%;
+
+    top: 0;
+    right: 0;
+
+    width: 61%;
     height: 100%;
-    background: url(../media/hospitalTeam.png);
-    background-size: cover;
-    background-position: center right;
+
+    z-index: 1;
+
+    background-image: url("../media/hospitalTeam.png");
     background-repeat: no-repeat;
-    z-index: 0;
+    background-size: cover;
+    background-position: right center;
+
+    /*
+       Large curved left edge
+    */
+    clip-path: ellipse(89% 165% at 100% 80%);
+}
+
+.gallery-hero-bg::before {
+    content: "";
+
+    position: absolute;
+
+    left: -80px;
+    top: -8%;
+
+    width: 145px;
+    height: 116%;
+
+    border-radius: 50%;
+
+    border: 18px solid rgba(69, 157, 226, 0.18);
+
+    transform: rotate(8deg);
+
+    z-index: 4;
+
+    pointer-events: none;
 }
 
 .gallery-hero-bg::after {
     content: "";
+
     position: absolute;
-    width: 360px;
-    height: 360px;
-    border-radius: 50%;
-    left: -520px;
-    top: 360px;
-    background: rgba(21, 154, 184, 0.06);
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+
+            /* middle transition */
+            rgba(235, 248, 254, 0.60) 43%,
+
+            /* very soft */
+            rgba(245, 251, 254, 0.40) 54%,
+
+            /* almost transparent */
+            rgba(255, 255, 255, 0.18) 64%,
+
+            /* clear image */
+            rgba(255, 255, 255, 0) 78%);
+
+    z-index: 3;
+
+    pointer-events: none;
 }
 
 .gallery-hero-content {
     position: relative;
-    z-index: 2;
-    width: min(900px, 90%);
-    text-align: center;
+
+    z-index: 10;
+
+    width: 52%;
+    max-width: 650px;
+
+    margin-left: 9%;
+
+    padding: 35px 20px 35px 0;
+
+    text-align: left;
 }
 
 .gallery-eyebrow {
-    display: inline-block;
-    margin-bottom: 18px;
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 17px;
+
+    color: #075fc4;
+
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 3px;
-    color: #159ab8;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
 }
+
+
 
 .gallery-hero h1 {
     margin: 0;
-    font-size: clamp(48px, 7vw, 82px);
-    line-height: 1;
-    font-weight: 700;
+
+    font-family: inherit;
+
+    font-size: clamp(50px, 5.2vw, 72px);
+
+    line-height: 1.02;
+
+    font-weight: 800;
+
     letter-spacing: -3px;
-    color: #172033;
+
+    color: #111d35;
 }
 
 .gallery-hero h1 span {
-    color: #159ab8;
+    color: #126ac7;
 }
 
+
 .gallery-hero p {
-    max-width: 620px;
-    margin: 28px auto 0;
-    font-size: 17px;
-    line-height: 1.8;
-    color: #667085;
+    max-width: 475px;
+
+    margin: 20px 0 0;
+
+    color: #536681;
+
+    font-size: 15px;
+
+    line-height: 1.7;
 }
 
 .gallery-hero-line {
-    width: 60px;
+    position: relative;
+
+    width: 55px;
     height: 3px;
-    margin: 30px auto 0;
-    border-radius: 20px;
-    background: #159ab8;
+
+    margin-top: 25px;
+
+    border-radius: 10px;
+
+    background: #087bc4;
 }
 
 
@@ -386,12 +525,25 @@
 @media (max-width: 900px) {
 
     .gallery-hero {
-        min-height: 410px;
+        min-height: 400px;
     }
 
-    .gallery-content {
-        width: 92%;
-        padding: 80px 0 100px;
+    .gallery-hero-bg {
+        width: 55%;
+    }
+
+    .gallery-hero-content {
+        width: 55%;
+        margin-left: 6%;
+    }
+
+    .gallery-hero h1 {
+        font-size: clamp(44px, 6vw, 65px);
+    }
+
+    .gallery-hero p {
+        max-width: 420px;
+        font-size: 14px;
     }
 
     .gallery-section {
@@ -427,34 +579,101 @@
 ========================================================= */
 
 @media (max-width: 600px) {
-
     .gallery-hero {
-        min-height: 360px;
+        min-height: 600px;
+
+        align-items: flex-start;
+
+        background:
+            linear-gradient(180deg,
+                #f5fbff 0%,
+                #ffffff 100%);
     }
+
+
+    /* Image moves to bottom */
+
+    .gallery-hero-bg {
+        top: auto;
+        bottom: 0;
+
+        width: 100%;
+        height: 43%;
+
+        clip-path: none;
+
+        transform: none;
+
+        background-position: center;
+    }
+
+
+    .gallery-hero-bg::before {
+        background:
+            linear-gradient(180deg,
+                rgba(245, 251, 255, 1) 0%,
+                rgba(245, 251, 255, 0.25) 35%,
+                transparent 65%);
+    }
+
+
+    .gallery-hero-bg::after {
+        display: none;
+    }
+
 
     .gallery-hero-content {
-        width: 88%;
+        width: 90%;
+
+        margin: 0 auto;
+
+        padding: 65px 0 30px;
+
+        text-align: left;
     }
+
 
     .gallery-eyebrow {
         font-size: 10px;
-        letter-spacing: 2px;
+
+        letter-spacing: 1.8px;
+
+        gap: 10px;
     }
+
+
+    .gallery-eyebrow::after {
+        width: 30px;
+    }
+
+
+    .gallery-eyebrow::before {
+        display: none;
+    }
+
 
     .gallery-hero h1 {
-        font-size: 48px;
+        font-size: 52px;
+
         letter-spacing: -2px;
+
+        line-height: 1;
     }
+
 
     .gallery-hero p {
+        max-width: 100%;
+
         margin-top: 20px;
+
         font-size: 14px;
-        line-height: 1.7;
+
+        line-height: 1.65;
     }
 
-    .gallery-content {
-        width: 90%;
-        padding: 65px 0 80px;
+
+    .gallery-hero-line {
+        margin-top: 22px;
     }
 
     .gallery-section {

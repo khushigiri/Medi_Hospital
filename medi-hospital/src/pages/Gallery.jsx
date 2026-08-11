@@ -196,8 +196,6 @@ function Gallery() {
 
                     <div className="gallery-hero-bg"></div>
 
-                    <div className="gallery-hero-overlay"></div>
-
                     <div className="gallery-hero-content">
 
                         <span className="gallery-eyebrow">
