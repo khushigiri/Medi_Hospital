@@ -7,7 +7,7 @@ import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import DoctorsPreview from "../components/Doctors/DoctorsPreview/DoctorsPreview";
 import Testimonials from "../components/Testimonials/Testimonials";
 import FAQ from "../components/FAQ/FAQ";
-import Contact from "../components/Contact/Contact";
+import ContactPreview from "../components/Contact/ContactPreview/ContactPreview";
 import Footer from "../components/Footer/Footer";
 import FloatingButtons from "../components/FloatingButtons/FloatingButtons";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
@@ -24,7 +24,7 @@ function Home() {
       <DoctorsPreview />
       <Testimonials />
       <FAQ />
-      <Contact />
+      <ContactPreview />
       <Footer />
       <FloatingButtons />
       <ScrollToTop />

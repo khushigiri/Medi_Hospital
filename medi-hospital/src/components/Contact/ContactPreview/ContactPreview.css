@@ -157,6 +157,39 @@
     box-shadow: 0 18px 40px rgba(0, 119, 166, .25);
 }
 
+.preview-form-success {
+    margin-top: 15px;
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    background: #e9f8ef;
+    color: #198754;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.preview-form-error {
+    margin-top: 15px;
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    background: #fff0f0;
+    color: #d93636;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.contact-form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
 /* RESPONSIVE */
 
 @media(max-width:992px) {
