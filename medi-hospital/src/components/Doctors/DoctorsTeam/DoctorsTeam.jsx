@@ -62,7 +62,7 @@ function DoctorsTeam() {
 
                     <div className="doctor-speciality">
                         <span></span>
-                        General Physician & Clinical Cardiology
+                        General Physician & Clinical Cardiologist
                     </div>
 
                     <p className="doctor-description">
@@ -97,7 +97,7 @@ function DoctorsTeam() {
 
 
                     <a
-                        href="/contact"
+                        href="tel:+91-9241959991"
                         className="doctor-appointment-btn"
                     >
                         Book an Appointment
@@ -161,7 +161,7 @@ function DoctorsTeam() {
 
 
                     <a
-                        href="/contact"
+                        href="tel:+91-9241959991"
                         className="doctor-appointment-btn"
                     >
                         Book an Appointment

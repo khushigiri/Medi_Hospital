@@ -61,6 +61,7 @@
     font-size: 24px;
     color: var(--primary-color);
     margin-top: 3px;
+    flex-shrink: 0;
 }
 
 .info-card h4 {
@@ -212,7 +213,7 @@
 
     .contact-section {
 
-        padding: 90px 6%;
+        padding: 0px 6%;
 
     }
 
@@ -222,6 +223,9 @@
 
     }
 
+    .contact-wrapper {
+        margin-top: 35px;
+    }
 
 }
 

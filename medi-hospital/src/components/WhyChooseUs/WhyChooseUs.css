@@ -146,13 +146,17 @@
 
 @media(max-width:576px) {
 
+    .why-section {
+        padding: 0px 6%;
+    }
+
     .why-header h2 {
 
         font-size: 30px;
     }
 
     .why-grid {
-
+        margin-top: 20px;
         gap: 20px;
     }
 

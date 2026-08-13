@@ -96,11 +96,16 @@
 
     .testimonial-section {
 
-        padding: 90px 6%;
+        padding: 0px 6%;
     }
 
     .testimonial-header h2 {
 
         font-size: 34px;
+    }
+
+    .testimonial-grid {
+
+        margin-top: 40px;
     }
 }

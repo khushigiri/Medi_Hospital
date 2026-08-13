@@ -424,6 +424,7 @@
     font-weight: 300;
     transform: translateY(10px);
     transition: transform 0.35s ease;
+    flex-shrink: 0;
 }
 
 .gallery-item:hover .gallery-expand {

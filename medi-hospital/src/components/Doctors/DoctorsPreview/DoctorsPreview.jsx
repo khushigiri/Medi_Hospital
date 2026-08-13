@@ -104,7 +104,7 @@ function DoctorsPreview() {
 
                     </div>
 
-                    <a href="\contact" className="doctor-btn">
+                    <a href="tel:+91-9241959991" className="doctor-btn">
 
                         Book Consultation
 

@@ -13,8 +13,6 @@
 .loader-logo {
     width: 110px;
     margin-bottom: 18px;
-
-    animation: pulse 1.2s infinite;
 }
 
 .loader h2 {
@@ -50,19 +48,6 @@
 
     100% {
         transform: translateX(320%);
-    }
-
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.08);
     }
 
 }

@@ -23,8 +23,8 @@ function Home() {
       <WhyChooseUs />
       <DoctorsPreview />
       <Testimonials />
-      <FAQ />
       <ContactPreview />
+      <FAQ />
       <Footer />
       <FloatingButtons />
       <ScrollToTop />

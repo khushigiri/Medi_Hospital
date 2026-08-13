@@ -105,20 +105,32 @@
 
 @media(max-width:600px) {
 
+    .about-container {
+        gap: 50px;
+    }
+
     .stats {
         grid-template-columns: 1fr;
     }
 
     .about {
-        padding: 80px 5%;
+        padding: 0px 5%;
     }
 
     .about-content h2 {
         font-size: 32px;
     }
 
+    .about-content h3 {
+        font-size: 2rem;
+    }
+
     .about-image img {
         border-radius: 25px;
+    }
+
+    .about-btn {
+        margin-top: 45px;
     }
 
 }

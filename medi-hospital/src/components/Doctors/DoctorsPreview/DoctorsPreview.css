@@ -203,10 +203,15 @@
 
 @media(max-width:768px) {
 
+    .doctor-container {
+        gap: 35px;
+    }
+
     .doctor-section {
 
-        padding: 90px 6%;
+        padding: 0px 6%;
     }
+
 
     .doctor-bg {
 
@@ -217,11 +222,13 @@
     .doctor-image img {
 
         width: 270px;
+
     }
 
     .doctor-content h2 {
 
-        font-size: 34px;
+        font-size: 32px;
+        margin: 0px 0 10px;
     }
 
     .doctor-content h4 {

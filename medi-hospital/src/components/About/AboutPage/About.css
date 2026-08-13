@@ -599,4 +599,28 @@
         padding: 30px;
     }
 
+    .about-hero {
+        height: 520px;
+        min-height: 520px;
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    .about-hero-content {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 2.2rem;
+        line-height: 1.25;
+        margin-bottom: 15px;
+    }
+
+    .about-hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
 }

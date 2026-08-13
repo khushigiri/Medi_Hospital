@@ -150,6 +150,7 @@
 
     .services-preview-grid {
         gap: 20px;
+        margin-top: 0px
     }
 
     .service-card {

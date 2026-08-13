@@ -45,7 +45,7 @@ function DoctorsHero() {
                     </a>
 
                     <a
-                        href="/contact"
+                        href="tel:+91-9241959991"
                         className="doctors-secondary-btn"
                     >
                         Book an Appointment

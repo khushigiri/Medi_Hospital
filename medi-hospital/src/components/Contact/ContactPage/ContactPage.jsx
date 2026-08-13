@@ -284,7 +284,7 @@ const ContactPage = () => {
                             <div className="social-links">
 
                                 <a
-                                    href="https://www.facebook.com/share/1HKsCBjgau/"
+                                    href="https://www.facebook.com/profile.php?id=61561061312958"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Facebook"
