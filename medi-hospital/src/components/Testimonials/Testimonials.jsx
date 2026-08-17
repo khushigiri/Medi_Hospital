@@ -35,7 +35,7 @@ function Testimonials() {
                     transition={{ duration: .6 }}
                     viewport={{ once: true }}
                 >
-                    <span className="section-tag">PATIENT TESTIMONIALS</span>
+                    <span className="testimonial-section-tag">PATIENT TESTIMONIALS</span>
 
                     <h2>What Our Patients Say</h2>
 

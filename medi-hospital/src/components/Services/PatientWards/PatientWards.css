@@ -3,7 +3,7 @@
 =========================== */
 
 .wards {
-    padding: 110px 8%;
+    padding: 45px 8%;
     background: linear-gradient(180deg, #f8fcff 0%, #eef7ff 100%);
     position: relative;
     overflow: hidden;
@@ -346,7 +346,7 @@
 
     .wards {
 
-        padding: 80px 6%;
+        padding: 45px 6%;
 
     }
 
@@ -359,8 +359,8 @@
     .wards-grid {
 
         grid-template-columns: 1fr;
-
-        gap: 28px;
+        margin-top: 25px;
+        gap: 30px;
 
     }
 

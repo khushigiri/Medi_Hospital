@@ -79,7 +79,7 @@ export default function Services() {
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
             >
-                <span className="services-tag">
+                <span className="services-preview-tag">
                     OUR SERVICES
                 </span>
 

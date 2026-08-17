@@ -374,12 +374,8 @@
 
     .doctors-hero-blend {
         background:
-            linear-gradient(180deg,
-                rgba(255, 255, 255, 1) 0%,
-                rgba(255, 255, 255, 0.98) 34%,
-                rgba(255, 255, 255, 0.84) 46%,
-                rgba(255, 255, 255, 0.40) 65%,
-                rgba(255, 255, 255, 0) 82%);
+
+            linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.98) 34%, rgb(255 255 255 / 70%) 46%, rgb(255 255 255 / 0%) 65%, rgb(255 255 255 / 0%) 82%);
     }
 
 
@@ -416,7 +412,7 @@
     .doctors-hero-content h1 {
         max-width: 380px;
 
-        font-size: 40px;
+        font-size: 30px;
 
         line-height: 1.1;
 
@@ -444,14 +440,14 @@
 
         align-items: flex-start;
 
-        gap: 10px;
+        gap: 8px;
     }
 
     .doctors-primary-btn,
     .doctors-secondary-btn {
         min-height: 46px;
 
-        padding: 0 20px;
+        padding: 0 10px;
 
         font-size: 13px;
     }

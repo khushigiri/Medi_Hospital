@@ -7,6 +7,7 @@
     text-align: center;
     max-width: 760px;
     margin: auto;
+    margin-top: 20px;
 }
 
 .why-header h2 {
@@ -153,11 +154,13 @@
     .why-header h2 {
 
         font-size: 30px;
+        line-height: 1.4;
+        margin-bottom: 30px;
     }
 
     .why-grid {
         margin-top: 20px;
-        gap: 20px;
+        gap: 30px;
     }
 
     .why-card {

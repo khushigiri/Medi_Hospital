@@ -1,5 +1,5 @@
 .testimonial-section {
-    padding: 80px 8%;
+    padding: 0px 8%;
     background: linear-gradient(180deg, #F8FAFC, #FFFFFF);
 }
 
@@ -19,6 +19,16 @@
     color: var(--text-light);
     line-height: 1.8;
     text-align: justify;
+}
+
+.testimonial-section-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: #1687c4;
+    margin-top: 50px;
 }
 
 .testimonial-grid {
@@ -101,11 +111,13 @@
 
     .testimonial-header h2 {
 
-        font-size: 34px;
+        font-size: 32px;
+        line-height: 1.4;
+        margin-bottom: 25px;
     }
 
     .testimonial-grid {
 
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }

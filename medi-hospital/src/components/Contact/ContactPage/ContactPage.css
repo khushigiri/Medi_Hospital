@@ -133,8 +133,7 @@
 .contact-intro {
     width: min(1180px, 90%);
     margin: auto;
-
-    padding: 100px 0;
+    padding: 0;
 }
 
 .contact-section-heading {
@@ -803,7 +802,7 @@
     }
 
     .location-content {
-        padding: 70px 8%;
+        padding: 15px 8%;
     }
 
     .location-map {
@@ -814,6 +813,10 @@
 
 
 @media (max-width: 700px) {
+
+    .contact-hero {
+        padding: 55px 8%;
+    }
 
     .contact-hero {
         min-height: 430px;
@@ -832,8 +835,24 @@
         font-size: 15px;
     }
 
+    .contact-features {
+        gap: 20px;
+    }
+
     .contact-intro {
-        padding: 70px 0;
+        padding: 0;
+    }
+
+    .contact-section-heading {
+        margin: 0 auto 30px;
+    }
+
+    .contact-info-header {
+        margin-bottom: 0px;
+    }
+
+    .contact-social {
+        margin-top: 25px;
     }
 
     .form-row {
@@ -891,6 +910,7 @@
 
     .location-map {
         min-height: 320px;
+        margin-top: 15px;
     }
 
 }

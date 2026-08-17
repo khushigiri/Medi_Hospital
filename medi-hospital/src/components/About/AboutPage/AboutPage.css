@@ -73,8 +73,7 @@
 =========================== */
 
 .about-intro {
-    /* max-width: 1200px; */
-    margin: 100px auto;
+    margin: 80px auto;
     padding: 0 20px;
 }
 
@@ -169,7 +168,7 @@
 ===================================*/
 
 .vision-section {
-    padding: 110px 20px;
+    padding: 20px;
     background: #fff;
 }
 
@@ -622,7 +621,7 @@
         max-width: none;
         box-sizing: border-box;
         padding: 0 22px;
-        margin: 70px auto;
+        margin: 55px auto;
     }
 
     .about-intro-content {

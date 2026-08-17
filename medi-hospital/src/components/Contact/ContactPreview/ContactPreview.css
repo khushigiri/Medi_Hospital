@@ -213,7 +213,7 @@
 
     .contact-section {
 
-        padding: 0px 6%;
+        padding: 60px 6%;
 
     }
 
@@ -234,6 +234,7 @@
     .contact-header h2 {
 
         font-size: 30px;
+        line-height: 1.3;
 
     }
 
