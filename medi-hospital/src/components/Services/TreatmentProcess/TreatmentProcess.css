@@ -3,9 +3,10 @@
 ========================================== */
 
 .process-section {
-    padding: 100px 8%;
+    padding: 20px 8%;
     background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
     overflow: hidden;
+    margin-bottom: 60px;
 }
 
 .process-header {

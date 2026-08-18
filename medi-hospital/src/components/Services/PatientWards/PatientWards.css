@@ -3,7 +3,7 @@
 =========================== */
 
 .wards {
-    padding: 45px 8%;
+    padding: 30px 8%;
     background: linear-gradient(180deg, #f8fcff 0%, #eef7ff 100%);
     position: relative;
     overflow: hidden;
@@ -77,6 +77,7 @@
     gap: 34px;
     position: relative;
     z-index: 2;
+    margin-top: 30px
 }
 
 /* ===========================
