@@ -9,7 +9,7 @@ import "./Gallery.css";
 
 import hospitalImg from "../media/hospital.png";
 import receptionImg from "../media/reception.jpeg";
-import waitingAreaImg from "../media/waitingArea.png";
+import waitingAreaImg from "../media/waitingArea.jpeg";
 import genWardImg from "../media/genWard.png";
 import cabinImg from "../media/cabin.png";
 import docConsultImg from "../media/doctorsWithPatients.png";

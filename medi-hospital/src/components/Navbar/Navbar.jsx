@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
+
+import {
+    FaBars,
+    FaTimes,
+    FaFacebookF,
+    FaInstagram,
+    FaLinkedinIn
+} from "react-icons/fa";
+
 import "./Navbar.css";
 
 import hospitalLogo from "../../media/logo.png";
@@ -59,14 +67,36 @@ function Navbar() {
 
                 </nav>
 
-                <a
-                    href="tel:+91-9241959991"
-                    className="call-btn"
-                >
-                    <FaPhoneAlt />
-                    Call Now
-                </a>
+                <div className="nav-social-links">
 
+                    <a
+                        href="https://www.facebook.com/medihospitalpage/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Medi Hospital Facebook"
+                    >
+                        <FaFacebookF />
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/hospital_medi?igsh=MWVtbW5pM2hlbTR0NQ=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Medi Hospital Instagram"
+                    >
+                        <FaInstagram />
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/medi-hospital-333747376/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Medi Hospital LinkedIn"
+                    >
+                        <FaLinkedinIn />
+                    </a>
+
+                </div>
                 <button
                     className="menu-btn"
                     onClick={() => setMenuOpen(!menuOpen)}

@@ -154,9 +154,7 @@ function ContactPreview() {
                                 </h4>
 
                                 <p>
-                                    8 Lane, Bhiphore Hirak Rd, opposite SB
-                                    International Hotel, Sugiadih, Tapowan colony,
-                                    Dhanbad, Jharkhand - 826010
+                                    Hirak Bypass Road, Lane 8, Dhanbad, Jharkhand - 828109
                                 </p>
 
                             </div>

@@ -36,7 +36,7 @@
 }
 
 .floating-buttons a:nth-child(1) {
-    display: none;
+    background: #0b5ed7;
 
 }
 
@@ -56,13 +56,4 @@
 
     transform: translateY(-5px) scale(1.08);
 
-}
-
-@media screen and (max-width: 868px) {
-    .floating-buttons a:nth-child(1) {
-
-        background: #0b5ed7;
-        display: flex;
-
-    }
 }

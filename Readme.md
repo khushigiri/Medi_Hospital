@@ -1,10 +1,10 @@
-## Medi Hospital Website
+# Medi Hospital Website
 
 A modern, responsive hospital website built with React.js and CSS3 for Medi Hospital, Dhanbad.
 
 The project focuses on creating a professional healthcare experience with clean layouts, smooth animations, responsive design, informative sections, and easy access to hospital services and contact information.
 
-# Project Overview
+## Project Overview
 
 Medi Hospital is a multi-page React website designed to present the hospital's:
 
@@ -19,7 +19,7 @@ Medi Hospital is a multi-page React website designed to present the hospital's:
 
 The interface is designed with a clean medical visual style using blue, cyan, white, and subtle neutral tones.
 
-# Main Features
+## Main Features
 
 🏥 Hospital Website
 
@@ -90,7 +90,7 @@ The project uses smooth animations for:
 - Lightbox appearance
 - Scroll-based visual interactions
 
-# Technology Stack
+## Technology Stack
 
 Frontend
 
@@ -111,13 +111,13 @@ Development Tools
 - Visual Studio Code
 - Git / GitHub
 
-# Credits
+## Credits
 
 Medi Hospital  
 Dhanbad, Jharkhand, India
 Website developed as a modern React-based hospital website project.
 ---
 
-# License
+## License
 
 This project is intended for the Medi Hospital website project. All hospital branding, images, content, and other proprietary assets should be used only with the appropriate permission.

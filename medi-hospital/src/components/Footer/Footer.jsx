@@ -119,7 +119,7 @@ function Footer() {
 
                         <FaMapMarkerAlt />
 
-                        <span>8 LANE, Bhiphore Hirak Rd, Tapowan colony, Dhanbad, Jharkhand - 826010</span>
+                        <span>Hirak Bypass Road, Lane 8, Dhanbad, Jharkhand - 828109</span>
 
                     </div>
 

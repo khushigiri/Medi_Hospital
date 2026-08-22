@@ -183,9 +183,7 @@ const ContactPage = () => {
                                 </h4>
 
                                 <p>
-                                    8 LANE, Bhiphore Hirak Rd, opposite SB
-                                    International Hotel, Sugiadih, Tapowan
-                                    colony, Dhanbad, Jharkhand-826010
+                                    Hirak Bypass Road, Lane 8, Dhanbad, Jharkhand - 828109
                                 </p>
 
                             </div>
@@ -284,7 +282,7 @@ const ContactPage = () => {
                             <div className="social-links">
 
                                 <a
-                                    href="https://www.facebook.com/profile.php?id=61561061312958"
+                                    href="https://www.facebook.com/medihospitalpage/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Facebook"
